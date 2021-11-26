@@ -12,7 +12,7 @@ from libqtile.utils import guess_terminal
 from typing import List  # noqa: F401from typing import List  # noqa: F401
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
-myTerm = "konsole"      # My terminal of choice
+myTerm = "xterm"      # My terminal of choice
 myBrowser = "chromium" # My terminal of choice
 
 keys = [
@@ -22,7 +22,7 @@ keys = [
              desc='Launches My Terminal'
              ),
          Key([mod], "r",
-             lazy.spawn("dmenu_run -p 'Run: '"),
+             lazy.spawn("dmenu_run -p 'You Are Running: '"),
              desc='Run Launcher'
              ),
          Key([mod], "b",
@@ -183,7 +183,6 @@ groups = [Group("DEV", layout='monadtall'),
           Group("DOC", layout='monadtall'),
           Group("CHAT", layout='monadtall'),
           Group("MUS", layout='monadtall'),
-          Group("VID", layout='monadtall'),
           Group("GFX", layout='floating')]
 
 # Allow MODKEY+[0 through 9] to bind to groups, see https://docs.qtile.org/en/stable/manual/config/groups.html
