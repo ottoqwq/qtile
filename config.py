@@ -263,8 +263,8 @@ def init_widgets_list():
                        background = colors[0]
                        ),
               widget.Image(
-                       filename = "~/.config/qtile/icons/python-white.png",
-                       scale = "False",
+                          filename = "~/.config/qtile/icons/arch_logo.svg",
+                                                  scale = "False",
                        mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)}
                        ),
               widget.Sep(
@@ -387,6 +387,7 @@ def init_widgets_list():
               widget.TextBox(
                        text = " 🖬",
                        foreground = colors[2],
+ 
                        background = colors[4],
                        padding = 0,
                        fontsize = 14
